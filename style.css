@@ -1,0 +1,763 @@
+h1, h2, h3, h4, h5, p, a, ul, ol
+{
+	margin: 0;
+	padding: 0;
+}
+
+html
+{
+	font-size: 100%;
+}
+
+@font-face
+{
+	font-family:stay_homeregular;
+	src: url(STAYHOME.otf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+.cvcontainer
+{
+	background-color: rgba(112, 114, 119, 0.63);
+	height: 160px;
+	width: 160px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin-left: -100%;
+	margin-top: -110%;
+	font-family: stay_homeregular;
+	font-weight: bolder;
+	color: #d1b57c;
+	border: 1px solid #DDD;
+	padding: 5px;
+	box-shadow: 0 1px 3px 0 rgba(75,75,75,0.5);
+	animation: fadeInOnly .8s ease-in-out;
+	letter-spacing: .15em;
+	font-variant: small-caps;
+}
+
+.download
+{
+	opacity:0.7;
+}
+
+p
+{
+	text-align:center;
+	text-shadow: 0 1px 1px rgb(0, 0, 0);
+	color:rgb(255, 255, 255);
+	background-color: rgba(66, 62, 62, 0.685);
+	font-weight:400;
+}
+
+label
+{
+	padding-right: 10px;
+	font-size: 1rem;
+}
+
+#file
+{
+	color: #777;
+	margin-left: 90px;
+	margin-right: 60px;
+	background-color:#CCC;
+}
+
+.typewriter h1
+{
+	overflow: hidden;
+	/* Ensures the content is not revealed until the animation */
+	border-right: .15em solid rgb(59, 57, 54);
+	/* The typwriter cursor */
+	white-space: nowrap;
+	/* Keeps the content on a single line */
+	margin: 0 auto;
+	/* Gives that scrolling effect as the typing happens */
+	letter-spacing: .15em;
+	/* Adjust as needed */
+	animation:typing 3.5s steps(40, end),blink-caret .75s step-end infinite;
+	background-color:rgba(66, 62, 62, 0.685);
+	padding:10px;
+}
+
+/* The typing effect */
+@keyframes typing
+{
+	from
+	{
+	width: 0 }
+
+	to
+	{
+	width: 100% }
+
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret
+{
+	from, to
+	{
+	border-color: transparent }
+
+	50%
+	{
+		border-color: rgb(68, 67, 64);
+	}
+
+}
+
+h1
+{
+	text-align: center;
+	color: #D1B57C;
+	font-variant: small-caps;
+	font-size: 28px;
+	text-shadow: 0 1px 1px rgb(0, 0, 0);
+	animation: fadeInDown .4s ease-in-out;
+}
+
+h2
+{
+	padding: 15px 10px;
+	text-align: center;
+	color: #D1B57C;
+	font-size:26px;
+	font-variant: small-caps;
+	text-shadow: 0 2px 3px rgba(65, 38, 38, 0.3);
+	animation: fadeInOnly .5s ease-in-out;
+	box-shadow: 0 3px 2px rgba(0,0,0,.1);
+	-webkit-animation: fadeInOnly .8s linear ease-in-out;
+}
+
+h3
+{
+	font-size: 25px;
+	text-align: center;
+	padding: 15px 10px;
+	color: #D1B57C;
+	/*rgba(75,75,75,.8)*/
+	font-weight: 600;
+	font-variant: small-caps;
+	border-bottom: 1px solid rgba(146,147,147,.2);
+}
+
+h4
+{
+	font-variant: small-caps;
+	font-weight: 200;
+	color: #D1B57C;
+}
+
+h5
+{
+	font-size: 18px;
+	font-weight: 200;
+	color: #D1B57C;
+}
+
+h6
+{
+	font-variant: small-caps;
+	font-size: 16px;
+	color: #777;
+}
+
+a
+{
+	cursor: pointer;
+}
+
+body
+{
+	font-family: 'Hind Siliguri', sans-serif;
+	background-image:url("https://cdn.pixabay.com/photo/2017/11/27/21/31/computer-2982270_960_720.jpg");
+	background-size:cover;
+	height:20vh;
+	font-size: 15px;
+	line-height: 1.5em;
+}
+
+.card
+{
+	position: relative;
+	width: 350px;
+	height: auto;
+	/* border: 1px solid #CCC;
+	*/
+	box-shadow: 0 2px 3px rgba(0,0,0,0.16), 0 2px 3px rgba(0,0,0,0.23);
+	margin: 20px auto;
+}
+
+.top
+{
+	padding-bottom: 100px;
+}
+
+.img-container img
+{
+	height: 160px;
+	width: 160px;
+	left: 80px;
+	top: -90px;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid #DDD;
+	padding: 5px;
+	border-radius: 50%;
+	box-shadow: 0 1px 3px 0 rgba(75,75,75,0.5);
+	animation: fadeInOnly .8s ease-in-out;
+}
+
+@keyframes fadeInOnly
+{
+	0%
+	{
+		opacity: 0;
+	}
+
+	100%
+	{
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeInOnly
+{
+	0%
+	{
+		opacity: 0;
+	}
+
+	100%
+	{
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadeInOnly
+{
+	0%
+	{
+		opacity: 0;
+	}
+
+	100%
+	{
+		opacity: 1;
+	}
+}
+
+@-o-keyframes fadeInOnly
+{
+	0%
+	{
+		opacity: 0;
+	}
+
+	100%
+	{
+		opacity: 1;
+	}
+}
+
+.img-rounded img
+{
+	position: relative;
+	border-radius: 50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border: 1px solid rgba(255, 248, 248, 0.288);
+	top:20px;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	z-index: 10;
+	margin-left: 120px;
+	animation: fadeIn .8s ease-in-out;
+	margin-bottom: 20px;
+}
+
+.description
+{
+	padding: 15px;
+	position: absolute;
+	line-height: 1.6em;
+	top:260px;
+	/*background: rgba(255,255,255,.9);
+	top:380px;
+	*/
+	width: 100%;
+}
+
+.description p
+{
+	animation: fadeInDown .6s ease-in-out;
+	font-size: 15px;
+	color: #888;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(0,0,0,.020);
+	color:#000;
+}
+
+@-webkit-keyframes fadeInDown
+{
+	from
+	{
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+
+	to
+	{
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@keyframes fadeInDown
+{
+	from
+	{
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		-o-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+
+	to
+	{
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+.list li
+{
+	list-style: none;
+	display: block;
+	border-bottom: 1px solid rgba(75,75,75,.080);
+	font-size: 17px;
+}
+
+.list li a
+{
+	display: block;
+	text-decoration: none;
+	padding: 10px 10px;
+	color: rgb(17, 16, 16);
+	font-variant: small-caps;
+	font-weight: 550;
+	text-shadow: 0 1px 2px rgba(3, 3, 3, 0.924);
+	border:solid rgba(110, 100, 100, 0.431);
+	background-color: rgba(128, 128, 128, 0.287);
+}
+
+.list li a i
+{
+	color:#D1B57C;
+	padding-right:5px;
+}
+
+.list li:first-child
+{
+	animation: slideInLeft .2s ease-in-out;
+}
+
+.list li:nth-child(2)
+{
+	animation: slideInLeft .4s ease-in-out;
+}
+
+.list li:nth-child(3)
+{
+	animation: slideInLeft .6s ease-in-out;
+}
+
+.list li:nth-child(4)
+{
+	animation: slideInLeft .8s ease-in-out;
+}
+
+.list li:last-child
+{
+	animation: slideInLeft 1s ease-in-out;
+	border: 0;
+}
+
+/*.list li:nth-child(2n+1)
+{
+	background: #FAFAFA;
+}
+
+*/
+.list li a:hover
+{
+	color: #a36d00!important;
+}
+
+.list li span i
+{
+	display: block;
+}
+
+/* Smooth scrolling IF user doesn't have a preference due to motion sensitivities */
+#myBtn
+{
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Fixed/sticky position */
+	bottom: 60px;
+	/* Place the button at the bottom of the page */
+	right: 90px;
+	/* Place the button 90px from the right */
+	z-index: 99;
+	/* Make sure it does not overlap */
+	border: none;
+	/* Remove borders */
+	outline: none;
+	/* Remove outline */
+	background-color: rgb(92, 84, 84);
+	/* Set a background color */
+	color: white;
+	/* Text color */
+	cursor: pointer;
+	/* Add a mouse pointer on hover */
+	padding: 15px;
+	/* Some padding */
+	border-radius: 10px;
+	/* Rounded corners */
+	font-size: 18px;
+	/* Increase font size */
+	width:10%;
+}
+
+#myBtn:hover
+{
+	background-color: #555;
+	/* Add a dark-grey background on hover */
+}
+
+@keyframes slideInLeft
+{
+	from
+	{
+		-webkit-transform: translate3d(-25%, 0, 0);
+		transform: translate3d(-25%, 0, 0);
+		visibility: visible;
+	}
+
+	to
+	{
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@-webkit-keyframes slideInLeft
+{
+	from
+	{
+		-webkit-transform: translate3d(-25%, 0, 0);
+		transform: translate3d(-25%, 0, 0);
+		visibility: visible;
+	}
+
+	to
+	{
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@-moz-keyframes slideInLeft
+{
+	from
+	{
+		-webkit-transform: translate3d(-25%, 0, 0);
+		transform: translate3d(-25%, 0, 0);
+		visibility: visible;
+	}
+
+	to
+	{
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@-o-keyframes slideInLeft
+{
+	from
+	{
+		-webkit-transform: translate3d(-25%, 0, 0);
+		transform: translate3d(-25%, 0, 0);
+		visibility: visible;
+	}
+
+	to
+	{
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.list-content
+{
+	position: absolute;
+	top:0;
+	bottom: 0;
+	height: auto;
+	z-index: 10;
+	display: none;
+	animation: fadeIn .5s ease-in-out;
+	overflow: scroll;
+	overflow-x:hidden;
+}
+
+.list-border li
+{
+	list-style: none;
+	padding: 10px;
+	padding-bottom: 10px;
+	color: #888;
+	margin: 10px 15px 10px 15px;
+	border: 1px solid rgba(203,202,202,.4);
+	border-radius: 4px;
+	animation: fadeInUp .8s ease-in-out;
+}
+
+@keyframes fadeIn
+{
+	from
+	{
+		opacity: 0;
+		transform: rotateY(180deg);
+		transform-style: preserve-3d;
+	}
+
+	to
+	{
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeIn
+{
+	from
+	{
+		opacity: 0;
+		transform: rotateY(180deg);
+		transform-style: preserve-3d;
+	}
+
+	to
+	{
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadeIn
+{
+	from
+	{
+		opacity: 0;
+		transform: rotateY(180deg);
+		transform-style: preserve-3d;
+	}
+
+	to
+	{
+		opacity: 1;
+	}
+}
+
+@-o-keyframes fadeIn
+{
+	from
+	{
+		opacity: 0;
+		transform: rotateY(180deg);
+		transform-style: preserve-3d;
+	}
+
+	to
+	{
+		opacity: 1;
+	}
+}
+
+@keyframes fadeInUp
+{
+	from
+	{
+		opacity: 0;
+		-webkit-transform: translate3d(0, 50%, 0);
+		transform: translate3d(0, 50%, 0);
+	}
+
+	to
+	{
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@-webkit-keyframes fadeInUp
+{
+	from
+	{
+		opacity: 0;
+		-webkit-transform: translate3d(0, 50%, 0);
+		transform: translate3d(0, 50%, 0);
+	}
+
+	to
+	{
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@-moz-keyframes fadeInUp
+{
+	from
+	{
+		opacity: 0;
+		-webkit-transform: translate3d(0, 50%, 0);
+		transform: translate3d(0, 50%, 0);
+	}
+
+	to
+	{
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@-o-keyframes fadeInUp
+{
+	from
+	{
+		opacity: 0;
+		-webkit-transform: translate3d(0, 50%, 0);
+		transform: translate3d(0, 50%, 0);
+	}
+
+	to
+	{
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+.profile ul
+{
+	margin-top: 20px;
+}
+
+.profile li strong
+{
+	color: #56b880;
+	font-weight: 200;
+}
+
+.profile p
+{
+	margin: 10px;
+	padding: 10px;
+	color: #777;
+}
+
+::-webkit-scrollbar
+{
+	width: 8px;
+}
+
+::-webkit-scrollbar-track
+{
+	background: #EEE;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background: #000;
+}
+
+::-webkit-scrollbar-button
+{
+	background: #CCC;
+}
+
+::-webkit-scrollbar-corner
+{
+	background: #EEE;
+}
+
+#myresult
+{
+	font-family: 'Hind Siliguri', sans-serif;
+	/* background-image: url("https://cdn.pixabay.com/photo/2015/09/02/12/30/hiker-918473_960_720.jpg");
+	*/
+	background-size: cover;
+	color: rgb(255, 255, 255);
+	font-size: 15px;
+	font-weight: 600;
+	padding: 8px;
+	text-align: center;
+	text-shadow: 0 4px 8px rgb(3, 3, 3);
+	background-color: #808080e0;
+}
+
+@media only screen and (max-width: 500px)
+{
+	body
+	{
+		background-image:url("https://cdn.pixabay.com/photo/2017/03/24/07/01/code-2170396__340.jpg");
+		background-size:no-repeat;
+	}
+
+	#myBtn {
+		display: none;
+		position: fixed;
+		bottom: 60px;
+		right: 90px;
+		z-index: 99;
+		border: none;
+		outline: none;
+		background-color: rgb(92, 84, 84);
+		color: white;
+		cursor: pointer;
+		padding: 15px;
+		border-radius: 10px;
+		font-size: 18px;
+		width: 15%;
+	}
+
+	#myresult {
+		font-family: 'Hind Siliguri', sans-serif;
+		background-color: rgba(128, 128, 128, 0.85);
+		background-size: cover;
+		color: rgb(255, 255, 255);
+		font-size: 15px;
+		font-weight: 600;
+		padding: 8px;
+		text-align: center;
+		text-shadow: 0 4px 8px rgb(3, 3, 3);
+		border: solid 12px rgba(0, 0, 0, 0.452);
+	}
+}
+
+
+          

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+	
+</head>
+<body>
+
+    
+	<button onclick="topFunction()" id="myBtn" title="Go to top">⬆️</button> 
+	
+	<script>
+	
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+} 
+</script>
+	 <div class="card">
+			<div class="top">
+			</div>
+	<div class="img-container">
+		<img src="profile.jpg" alt="image">
+	</div>
+			<div class="typewriter">
+				<h1>Sarah Diom</h1>
+				<p>Web developper junior</p>
+			</div>
+			<div id="myresult"></div>
+			<div class="list">
+			<script type="text/javascript"> 
+			
+                function myFunction( s ) {
+				  document.getElementById("myresult").innerHTML = s;
+				  };
+			  // --> </script>
+			  <noscript>JavaScript deactivated.</noscript>
+			  <style type="text/css">
+			  </style>
+		
+			  <ul>
+				<li onclick="myFunction(`Engagée dans une reconversion professionnelle </br> depuis mai 2020, je suis particulièrement motivée et enthousiaste </br> à l'idée de mettre en pratiques mes connaissances fraîchement acquises</br>et d'en apprendre de nouvelles.`)"><a>A propos.</a></li>
+				<li onclick="myFunction (`LANGUAGE ET COMPETENCES </br>   </br> HTML: ••••• </br> </br> CSS: ••••• </br> </br> JS: ••• </br> </br> PHP: ••`)"><a>Languages & Compétences.</br></br>
+					</a></li>
+				<li onclick="myFunction (`<a href='CV.pdf' download='CV.pdf'><p class='lien'>CV en pdf</p><img class='download' src='https://cdn.pixabay.com/photo/2018/04/12/18/13/application-3314289_960_720.png' width='100%' height='100%'>`)"><a>Télécharger mon CV</a></li>
+				<li onclick="myFunction (`<a href='tel:+33768910255'style='color:white'> 0768910255 </br> </br> </a></br><a href='mailto:sarahdevdiom@gmail.com'style='color:white'>  <img class='mail' src='https://cdn.pixabay.com/photo/2013/07/12/13/55/letter-147563_960_720.png' width='60px' height='40px'>
+				</br> </a>`)"><a>Contact.</a></li>
+			  </ul>
+			  &nbsp;</div>
+			</div>
+</body>
+
+</html>
